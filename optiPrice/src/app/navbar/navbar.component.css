@@ -3,11 +3,13 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ECECEC;
-    padding: 10px 20px;
+    padding: 5px 10px;
+    height: 10vh;
   }
   
   .navbar-logo {
     flex: 1;
+    padding-left: 30px;
   }
   
   .logo {
@@ -17,14 +19,16 @@
   .navbar-menu {
     flex: 2;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 25px;
   }
   
   .navbar-menu li {
     margin: 0 15px;
+    padding: 5px;
+    font-size: 1.1em;
   }
   
   .navbar-menu a {
