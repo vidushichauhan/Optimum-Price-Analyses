@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './product.component';
 
 describe('ProductComponent', () => {
@@ -8,7 +8,7 @@ describe('ProductComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProductComponent]
+      imports: [ProductComponent, FormsModule]
     })
     .compileComponents();
     
