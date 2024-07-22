@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ECECEC;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    flex: 1;
+  }
+  
+  .logo {
+    max-height: 40px; /* Adjust as needed */
+  }
+  
+  .navbar-menu {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin: 0 15px;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: white;
+  }
