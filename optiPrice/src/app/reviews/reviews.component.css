@@ -1,6 +1,7 @@
 .reviews-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
     background-color: #f5f5f5;
@@ -62,7 +63,7 @@
   .comment-container {
     width: 80%;
     max-width: 400px;
-    margin-top: 50px;
+    margin: 50px;
   }
   
   textarea {
