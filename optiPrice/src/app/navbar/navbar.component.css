@@ -39,5 +39,6 @@
   }
   
   .navbar-menu a:hover {
-    color: white;
+    color: rgb(188, 180, 180);
+    cursor: pointer;
   }
