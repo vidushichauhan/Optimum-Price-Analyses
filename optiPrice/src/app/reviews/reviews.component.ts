@@ -1,23 +1,30 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-reviews',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './reviews.component.html',
-  styleUrl: './reviews.component.css'
+  styleUrls: ['./reviews.component.css']
 })
 export class ReviewsComponent {
-  rating: number = 3;
+  rating: number = 0;
   comment: string = '';
 
+  constructor(private sharedService: SharedService) {}
+
+  onRatingChange() {
+    this.sharedService.setData('stars', this.rating);
+  }
+
+  onCommentChange() {
+    this.sharedService.setData('reviews', this.comment.length); // Example usage of comment length as review count
+  }
+
   getEmoticonColor(value: number): string {
-    if (value <= 1) return '#ED4337';
-    if (value <= 2) return '#FF8C00';
-    if (value <= 3) return '#FFD700';
-    if (value <= 4) return '#9ACD32';
-    return '#228B22';
+    return this.rating >= value ? 'orange' : 'grey';
   }
 }
