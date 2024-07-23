@@ -1,9 +1,10 @@
 .price-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
     background-color: #f5f5f5;
+    min-height: 40vh;
   }
   
   .current-price, .predicted-price {
