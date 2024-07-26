@@ -13,12 +13,15 @@
     </div>
     <div class="rating-value">{{rating | number:'1.1-1'}}</div>
 
-  <div class="comment-container">
+    <div class="comment-container">
+      <label for="numberOfReviews">Number of Reviews:</label>
       <input type="number" 
+             id="numberOfComments" 
              [(ngModel)]="numberOfComments" 
              (input)="validateNumberOfComments()"
              min="1" 
              placeholder="Number of comments">
     </div>
+    
   </div>
 </div>
