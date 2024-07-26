@@ -34,7 +34,7 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/optimal-price-frontend.git](https://github.com/vidushichauhan/Optimum-Price-Analyses.git)
+   git clone https://github.com/vidushichauhan/Optimum-Price-Analyses.git
    cd Optimum-Price-Analyses
    ```
 
