@@ -1,6 +1,9 @@
 <div class="reviews-container">
+  <!-- Lottie Animation Container -->
+  <div class="lottie-container" #lottieContainer></div>
+
   <div class="rating-container">
-    <input type="range" min="1" max="5" step="0.1" [(ngModel)]="rating" (ngModelChange)="onRatingChange()" class="rating-slider">
+    <input type="range" min="1" max="5" step="0.1" [(ngModel)]="rating" class="rating-slider" (ngModelChange)="onRatingChange()" class="rating-slider">
     <div class="emoticons">
       <span class="emoticon" [style.color]="getEmoticonColor(1)">😫</span>
       <span class="emoticon" [style.color]="getEmoticonColor(2)">🙁</span>
@@ -9,8 +12,13 @@
       <span class="emoticon" [style.color]="getEmoticonColor(5)">😄</span>
     </div>
     <div class="rating-value">{{rating | number:'1.1-1'}}</div>
-  </div>
+
   <div class="comment-container">
-    <textarea [(ngModel)]="comment" (ngModelChange)="onCommentChange()" placeholder="Write your review here..."></textarea>
+      <input type="number" 
+             [(ngModel)]="numberOfComments" 
+             (input)="validateNumberOfComments()"
+             min="1" 
+             placeholder="Number of comments">
+    </div>
   </div>
 </div>
