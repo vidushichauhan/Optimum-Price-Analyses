@@ -1,6 +1,3 @@
-Sure, here's an example of how you might structure a README file for your Angular project, which uses APIs exposed by a backend Flask application for optimal price analysis:
-
----
 
 # Optimal Price Analysis Frontend
 
@@ -37,8 +34,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/optimal-price-frontend.git
-   cd optimal-price-frontend
+   git clone https://github.com/your-username/optimal-price-frontend.git](https://github.com/vidushichauhan/Optimum-Price-Analyses.git)
+   cd Optimum-Price-Analyses
    ```
 
 2. Install the dependencies:
@@ -53,7 +50,7 @@ Make sure you have the following installed:
    ng serve
    ```
 
-   The application will be available at `http://localhost:4200`.
+   The application will be available at `http://localhost:5000`.
 
 ## Usage
 
