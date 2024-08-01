@@ -59,6 +59,8 @@ Make sure you have the following installed:
 3. Click the "Get Optimal Price" button to retrieve the optimal price suggestion from the backend.
 4. The optimal price will be displayed on the screen.
 
+To get the backend Project Clone the following Git Repository: https://github.com/vidushichauhan/Optimal_Price_Backend
+
 ## API Endpoints
 
 The backend service provides the following API endpoints:
