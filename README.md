@@ -1,5 +1,5 @@
 
-# Optimal Price Analysis Frontend
+# Optimal Price Analysis Frontend : ADT PROJECT 
 
 This Angular project is designed to interact with a backend service to provide optimal pricing suggestions for products. The backend is implemented in Python using Flask and exposes several APIs for the frontend to consume.
 
